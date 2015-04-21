@@ -1,0 +1,8 @@
+/app/config/config.local.neon
+/vendor/*
+/log/*
+/temp/*
+!.gitignore
+.idea
+www/temp/*
+

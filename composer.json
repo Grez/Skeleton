@@ -1,0 +1,15 @@
+{
+    "name": "teddy/skeleton",
+    "description": "Skeleton",
+    "require": {
+        "teddy/framework": "dev-master"
+    },
+    "license": "unlicensed",
+    "authors": [
+        {
+            "name": "Tom Barton",
+            "email": "grez.cz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
