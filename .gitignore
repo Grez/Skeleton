@@ -1,8 +1,11 @@
 /app/config/config.local.neon
 /vendor/*
 /log/*
+!/log/.keep
 /temp/*
+!/temp/.keep
 !.gitignore
 .idea
-www/temp/*
+/www/temp/*
+!/www/temp/.keep
 
