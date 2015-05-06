@@ -14,6 +14,7 @@ extensions:
     events: Kdyby\Events\DI\EventsExtension
     annotations: Kdyby\Annotations\DI\AnnotationsExtension
     doctrine: Kdyby\Doctrine\DI\OrmExtension
+    frontEndCompiler: Teddy\FrontEndCompiler\Extension
 
 migrations:
     dirs:
@@ -26,4 +27,23 @@ doctrine:
     metadata:
         #Teddy: %appDir%/../vendor/teddy/framework/app/model
         #Teddy: "%appDir%/model"
-        Game: "%appDir%/model"
+        Teddy: %libsDir%/teddy/framework/app/model
+        Game: %appDir%/model
+
+frontEndCompiler:
+    publicize:
+        Teddy:
+            dir: %wwwDir%/../vendor/teddy/framework/www
+            files: [/images]
+    css:
+        Teddy:
+            dir: %wwwDir%/../vendor/teddy/framework/www
+        Game:
+            dir: %wwwDir%
+            files: [/css/style.less]
+    js:
+        Teddy:
+            dir: %wwwDir%/../vendor/teddy/framework/www
+        Game:
+            dir: %wwwDir%
+            files: [/js/main.js]
