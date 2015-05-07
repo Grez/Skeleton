@@ -19,7 +19,7 @@ frontEndCompiler:
     publicize:
         Teddy:
             dir: %wwwDir%/../vendor/teddy/framework/www
-            files: [/images]
+            files: [/images/teddy, /js/workers/teddy]
     css:
         Teddy:
             dir: %wwwDir%/../vendor/teddy/framework/www

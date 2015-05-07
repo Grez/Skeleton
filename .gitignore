@@ -8,4 +8,5 @@
 .idea
 /www/temp/*
 !/www/temp/.keep
-
+/www/js/workers/teddy
+/www/images/teddy
