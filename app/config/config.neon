@@ -15,20 +15,13 @@ doctrine:
         Teddy: %libsDir%/teddy/framework/app/model
         Game: %appDir%/model
 
-frontEndCompiler:
-    publicize:
+publisher:
+    publicRoot: %wwwDir%
+    assets:
         Teddy:
-            dir: %wwwDir%/../vendor/teddy/framework/www
-            files: [/images/teddy, /js/workers/teddy]
-    css:
-        Teddy:
-            dir: %wwwDir%/../vendor/teddy/framework/www
-        Game:
-            dir: %wwwDir%
-            files: [/css/style.less]
-    js:
-        Teddy:
-            dir: %wwwDir%/../vendor/teddy/framework/www
-        Game:
-            dir: %wwwDir%
-            files: [/js/main.js]
+            hiddenRoot: %libsDir%/teddy/framework/www
+            dirs:
+                - /css/teddy
+                - /js/teddy
+                - /js/workers/teddy
+                - /images/teddy

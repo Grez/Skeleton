@@ -6,7 +6,13 @@
 !/temp/.keep
 !.gitignore
 .idea
-/www/temp/*
-!/www/temp/.keep
+/www/webtemp/*
+!/www/webtemp/.keep
 /www/js/workers/teddy
 /www/images/teddy
+
+# files copied from teddy
+/css/teddy
+/js/teddy
+/js/workers/teddy
+/images/teddy
