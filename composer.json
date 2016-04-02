@@ -2,6 +2,7 @@
     "name": "teddy/skeleton",
     "description": "Skeleton",
     "require": {
+        "kdyby/doctrine": "~3.0@stable",
         "teddy/framework": "dev-master"
     },
     "license": "unlicensed",
