@@ -12,16 +12,14 @@ migrations:
 
 doctrine:
     metadata:
-        Teddy: %libsDir%/teddy/framework/app/model
-        Game: %appDir%/model
+        Teddy: %libsDir%/teddy/framework/app/entities
+        Game: %appDir%/entities
 
 publisher:
-    publicRoot: %wwwDir%
-    assets:
-        Teddy:
-            hiddenRoot: %libsDir%/teddy/framework/www
-            dirs:
-                - /css/teddy
-                - /js/teddy
-                - /js/workers/teddy
-                - /images/teddy
+    package1:
+        from: %libsDir%/teddy/framework/www
+        to: %wwwDir%
+        items:
+            - /css/teddy
+            - /js/teddy
+            - /images/teddy
