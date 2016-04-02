@@ -12,7 +12,7 @@
 /www/images/teddy
 
 # files copied from teddy
-/css/teddy
-/js/teddy
-/js/workers/teddy
-/images/teddy
+/www/css/teddy
+/www/js/teddy
+/www/js/workers/teddy
+/www/images/teddy
