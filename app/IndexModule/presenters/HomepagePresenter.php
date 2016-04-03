@@ -3,6 +3,7 @@
 namespace Game\IndexModule\Presenters;
 
 
+
 class HomepagePresenter extends \Teddy\IndexModule\Presenters\HomepagePresenter
 {
 

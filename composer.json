@@ -3,7 +3,8 @@
     "description": "Skeleton",
     "require": {
         "kdyby/doctrine": "~3.0@stable",
-        "teddy/framework": "dev-master"
+        "teddy/framework": "dev-master",
+        "teddy/websockets": "dev-master"
     },
     "license": "unlicensed",
     "authors": [

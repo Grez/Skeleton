@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7462db2e395c7325ec73b0c600b4f2a4",
-    "content-hash": "9d783e9306d0adfdaaf20a3e3edc0f12",
+    "hash": "70d2cdc3c8e84948aff8ccffd515e14a",
+    "content-hash": "5c44f8e99f3896bd6c6c468f93b3a9f3",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -337,12 +337,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "61e1f860a304c3fb6961ecbec36927b5f20b71c6"
+                "reference": "3df22ccdf20a68fafe34cb1ae452aee7cde7d442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/61e1f860a304c3fb6961ecbec36927b5f20b71c6",
-                "reference": "61e1f860a304c3fb6961ecbec36927b5f20b71c6",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/3df22ccdf20a68fafe34cb1ae452aee7cde7d442",
+                "reference": "3df22ccdf20a68fafe34cb1ae452aee7cde7d442",
                 "shasum": ""
             },
             "require": {
@@ -400,7 +400,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2016-02-19 14:48:59"
+            "time": "2016-04-03 03:13:05"
         },
         {
             "name": "doctrine/inflector",
@@ -3348,16 +3348,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "7113240e0752ca4b1cb9232ddc57c18aaf462b6d"
+                "reference": "e45c5a57b804b9d2edf0bd8ab5c9f9cfe7ff7d65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/7113240e0752ca4b1cb9232ddc57c18aaf462b6d",
-                "reference": "7113240e0752ca4b1cb9232ddc57c18aaf462b6d",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/e45c5a57b804b9d2edf0bd8ab5c9f9cfe7ff7d65",
+                "reference": "e45c5a57b804b9d2edf0bd8ab5c9f9cfe7ff7d65",
                 "shasum": ""
             },
             "require": {
-                "cboden/ratchet": "^0.3.3",
                 "doctrine/migrations": "@dev",
                 "ipub/visual-paginator": "@dev",
                 "janmarek/webloader": "^2.4",
@@ -3381,7 +3380,6 @@
                 "oyejorge/less.php": "~1.7",
                 "php": ">= 5.3.7",
                 "teddy/publisher": "@dev",
-                "textalk/websocket": "^1.2",
                 "tracy/tracy": "~2.3.0",
                 "zenify/doctrine-migrations": "~2.0"
             },
@@ -3407,7 +3405,7 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-04-02 21:37:21"
+            "time": "2016-04-03 11:48:04"
         },
         {
             "name": "teddy/publisher",
@@ -3446,6 +3444,45 @@
             ],
             "description": "Publisher copies files/folders from private folders to public",
             "time": "2016-04-02 21:08:48"
+        },
+        {
+            "name": "teddy/websockets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Grez/websockets.git",
+                "reference": "e44bcedb692d60514bc066418f25375a5a9139a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Grez/websockets/zipball/e44bcedb692d60514bc066418f25375a5a9139a7",
+                "reference": "e44bcedb692d60514bc066418f25375a5a9139a7",
+                "shasum": ""
+            },
+            "require": {
+                "cboden/ratchet": "^0.3.3",
+                "nette/di": "~2.3.0",
+                "textalk/websocket": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Bartoň <grez.cz@gmail.com>"
+                }
+            ],
+            "description": "Helps to use websockets",
+            "time": "2016-04-03 11:36:29"
         },
         {
             "name": "textalk/websocket",
@@ -3700,7 +3737,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "kdyby/doctrine": 0,
-        "teddy/framework": 20
+        "teddy/framework": 20,
+        "teddy/websockets": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

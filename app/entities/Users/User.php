@@ -8,7 +8,7 @@ use Nette;
 /**
  * @ORM\Entity
  */
-class User extends \Teddy\Model\User
+class User extends \Teddy\Entities\User\User
 {
 
     /**

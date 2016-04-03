@@ -1,10 +1,15 @@
 services:
     - Game\Router\RouterFactory
+    - Teddy\WebSockets\ClientService()
     router: @Game\Router\RouterFactory::create()
     nette.presenterFactory:
         class: Game\Application\PresenterFactory
         arguments:
-            - Nette\Bridges\ApplicationDI\PresenterFactoryCallback(..., 5, %appDir%/model)
+            - Nette\Bridges\ApplicationDI\PresenterFactoryCallback(..., 5, %appDir%/entities)
+
+    pmListener:
+            class: Game\Entities\PM\MessagesListener
+            tags: [kdyby.subscriber]
 
 migrations:
     dirs:
@@ -16,10 +21,22 @@ doctrine:
         Game: %appDir%/entities
 
 publisher:
-    package1:
+    teddyFramework:
         from: %libsDir%/teddy/framework/www
         to: %wwwDir%
         items:
             - /css/teddy
             - /js/teddy
+            - /js/workers/teddy
             - /images/teddy
+    websockets:
+        from: %libsDir%/teddy/websockets/js
+        to: %wwwDir%/js/teddy/websockets
+        items:
+            - /websockets.js
+
+webloader:
+    js:
+        game:
+            files:
+                websockets: teddy/websockets/websockets.js
