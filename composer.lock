@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "70d2cdc3c8e84948aff8ccffd515e14a",
-    "content-hash": "5c44f8e99f3896bd6c6c468f93b3a9f3",
+    "hash": "f5f22edb51e3971dce16c02befd0e506",
+    "content-hash": "7206ef46f5b1a777afb82169a6cbc292",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -1559,12 +1559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Events.git",
-                "reference": "712d617a57b5a1a4f68a5268c51c52e2286d93c8"
+                "reference": "b9ddd1fe5e288d8a1759cdf6ae3e56fcbc7c0bef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Events/zipball/712d617a57b5a1a4f68a5268c51c52e2286d93c8",
-                "reference": "712d617a57b5a1a4f68a5268c51c52e2286d93c8",
+                "url": "https://api.github.com/repos/Kdyby/Events/zipball/b9ddd1fe5e288d8a1759cdf6ae3e56fcbc7c0bef",
+                "reference": "b9ddd1fe5e288d8a1759cdf6ae3e56fcbc7c0bef",
                 "shasum": ""
             },
             "require": {
@@ -1632,7 +1632,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-01-09 23:53:59"
+            "time": "2016-04-03 14:58:55"
         },
         {
             "name": "latte/latte",
@@ -1794,12 +1794,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/application.git",
-                "reference": "fe8ab88a46dd90d44216b368b38b429a10230fdb"
+                "reference": "03c6806f2ef5075305e9a7782fcf54e6fb56dba0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/application/zipball/fe8ab88a46dd90d44216b368b38b429a10230fdb",
-                "reference": "fe8ab88a46dd90d44216b368b38b429a10230fdb",
+                "url": "https://api.github.com/repos/nette/application/zipball/03c6806f2ef5075305e9a7782fcf54e6fb56dba0",
+                "reference": "03c6806f2ef5075305e9a7782fcf54e6fb56dba0",
                 "shasum": ""
             },
             "require": {
@@ -1848,7 +1848,7 @@
             ],
             "description": "Nette Application MVC Component",
             "homepage": "https://nette.org",
-            "time": "2016-03-09 01:46:12"
+            "time": "2016-04-03 15:31:36"
         },
         {
             "name": "nette/bootstrap",
@@ -3348,12 +3348,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "e45c5a57b804b9d2edf0bd8ab5c9f9cfe7ff7d65"
+                "reference": "22cafeae029b6f24db26f658535b1bfd97d4dccc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/e45c5a57b804b9d2edf0bd8ab5c9f9cfe7ff7d65",
-                "reference": "e45c5a57b804b9d2edf0bd8ab5c9f9cfe7ff7d65",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/22cafeae029b6f24db26f658535b1bfd97d4dccc",
+                "reference": "22cafeae029b6f24db26f658535b1bfd97d4dccc",
                 "shasum": ""
             },
             "require": {
@@ -3363,7 +3363,6 @@
                 "kdyby/clock": "^0.3.0",
                 "kdyby/doctrine": "~3.0@stable",
                 "latte/latte": "~2.3.0",
-                "martinlindhe/php-noisegenerator": "^1.0",
                 "nella/forms-datetime": "^2.3",
                 "nette/application": "~2.3.0",
                 "nette/bootstrap": "~2.3.0",
@@ -3405,7 +3404,46 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-04-03 11:48:04"
+            "time": "2016-04-03 16:05:42"
+        },
+        {
+            "name": "teddy/map",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Grez/map.git",
+                "reference": "6b8e0e9b9e8b3a3169f11e48adf1b316da00c771"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Grez/map/zipball/6b8e0e9b9e8b3a3169f11e48adf1b316da00c771",
+                "reference": "6b8e0e9b9e8b3a3169f11e48adf1b316da00c771",
+                "shasum": ""
+            },
+            "require": {
+                "kdyby/doctrine": "~3.0@stable",
+                "martinlindhe/php-noisegenerator": "^1.0",
+                "nette/utils": "~2.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Bartoň <grez.cz@gmail.com>"
+                }
+            ],
+            "description": "Map adds entities & service for Map",
+            "time": "2016-04-03 16:10:31"
         },
         {
             "name": "teddy/publisher",
@@ -3738,7 +3776,8 @@
     "stability-flags": {
         "kdyby/doctrine": 0,
         "teddy/framework": 20,
-        "teddy/websockets": 20
+        "teddy/websockets": 20,
+        "teddy/map": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

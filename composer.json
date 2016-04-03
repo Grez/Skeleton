@@ -4,7 +4,8 @@
     "require": {
         "kdyby/doctrine": "~3.0@stable",
         "teddy/framework": "dev-master",
-        "teddy/websockets": "dev-master"
+        "teddy/websockets": "dev-master",
+        "teddy/map": "dev-master"
     },
     "license": "unlicensed",
     "authors": [

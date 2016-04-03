@@ -11,6 +11,9 @@ services:
             class: Game\Entities\PM\MessagesListener
             tags: [kdyby.subscriber]
 
+    - Teddy\Map\MapService()
+    - Game\GameModule\Components\IMapControlFactory()
+
 migrations:
     dirs:
         - %libsDir%/teddy/framework/app/migrations
@@ -19,6 +22,7 @@ doctrine:
     metadata:
         Teddy: %libsDir%/teddy/framework/app/entities
         Game: %appDir%/entities
+        Map: %libsDir%/teddy/map/src/entities
 
 publisher:
     teddyFramework:
@@ -34,9 +38,27 @@ publisher:
         to: %wwwDir%/js/teddy/websockets
         items:
             - /websockets.js
+    map:
+        from: %libsDir%/teddy/map/js
+        to: %wwwDir%/js/teddy/map
+        items:
+            - /astar.js
+            - /pathfinding.js
 
 webloader:
+    css:
+        game:
+            files:
+                map: teddy/game/map.less
     js:
         game:
             files:
                 websockets: teddy/websockets/websockets.js
+                astar: teddy/map/astar.js
+                pathfinding: teddy/map/pathfinding.js
+
+console:
+    url: http://www.teddy.l/
+    commands:
+        generateMap: Game\Map\Console\GenerateMapCommand
+        embiggenMap: Game\Map\Console\EmbiggenMapCommand
