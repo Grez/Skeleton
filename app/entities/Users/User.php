@@ -1,6 +1,6 @@
 <?php
 
-namespace Game\Model;
+namespace Game\Entities\User;
 
 use Doctrine\ORM\Mapping as ORM;
 use Nette;
