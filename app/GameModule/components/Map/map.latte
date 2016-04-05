@@ -1,9 +1,5 @@
 <script type='text/javascript'>
 	$(function() {
-		{cache 'map-js', expire => '10 minutes'}
-			window.graph = {$map->getJsIncidenceMatrix()|noescape};
-		{/cache}
-
 		window.startPosition = [{$startPosition->getVirtualX()}, {$startPosition->getVirtualY()}];
 		window.pathfinding = new Pathfinding(window.graph, window.startPosition);
 	});
