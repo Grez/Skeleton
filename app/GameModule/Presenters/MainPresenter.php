@@ -6,9 +6,9 @@ use Game\GameModule\Components\IMapControlFactory;
 use Nette\Caching\Cache;
 use Nette\Caching\Storages\FileStorage;
 use Teddy\GameModule\Presenters\BasePresenter;
-use Teddy\Map\Map;
+use Game\Map\Map;
 use Teddy\Map\MapService;
-use Teddy\Map\Position;
+use Game\Map\Position;
 
 
 

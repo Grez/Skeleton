@@ -22,7 +22,7 @@ doctrine:
     metadata:
         Teddy: %libsDir%/teddy/framework/app/entities
         Game: %appDir%/entities
-        Map: %libsDir%/teddy/map/src/entities
+        Map: %appDir%/Map
 
 publisher:
     teddyFramework:
@@ -43,7 +43,7 @@ publisher:
         to: %wwwDir%/js/teddy/map
         items:
             - /astar.js
-            - /pathfinding.js
+            - /pathfinding.workers.js
 
 webloader:
     css:
@@ -55,7 +55,7 @@ webloader:
             files:
                 websockets: teddy/websockets/websockets.js
                 astar: teddy/map/astar.js
-                pathfinding: teddy/map/pathfinding.js
+                pathfinding: teddy/map/pathfinding.workers.js
 
 console:
     url: http://www.teddy.l/

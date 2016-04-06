@@ -5,9 +5,9 @@ namespace Game\Entities\PM;
 use Kdyby\Doctrine\EntityManager;
 use Nette;
 use Kdyby;
-use Teddy\Entities\PM\Message;
+use Game\Entities\PM\Message;
 use Teddy\Entities\PM\Messages;
-use Teddy\Entities\User\User;
+use Game\Entities\User\User;
 use Teddy\Websockets\ClientService;
 use WebSocket\ConnectionException;
 
