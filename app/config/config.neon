@@ -13,6 +13,7 @@ services:
 
     - Teddy\Map\MapService()
     - Game\GameModule\Components\IMapControlFactory()
+    - Game\GameModule\Components\IWebcamControlFactory()
 
 migrations:
     dirs:

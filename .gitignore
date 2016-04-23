@@ -8,6 +8,8 @@
 .idea
 /www/webtemp/*
 !/www/webtemp/.keep
+/www/images/uploaded/*
+!/www/images/uploaded/.keep
 .DS_Store
 
 # files copied from teddy

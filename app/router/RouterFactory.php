@@ -16,6 +16,7 @@ class RouterFactory extends \Teddy\Router\RouterFactory
 	 */
 	public static function create()
 	{
+		Route::$defaultFlags = Route::SECURED; // needed for WebRTC
 		$router = parent::create();
 		return $router;
 	}
