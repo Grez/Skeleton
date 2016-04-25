@@ -1641,12 +1641,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "9440e512f7d34ded751981abb92127ae5d85087e"
+                "reference": "65caf56e434f7285914a50d45c2e8571990f3315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/9440e512f7d34ded751981abb92127ae5d85087e",
-                "reference": "9440e512f7d34ded751981abb92127ae5d85087e",
+                "url": "https://api.github.com/repos/nette/latte/zipball/65caf56e434f7285914a50d45c2e8571990f3315",
+                "reference": "65caf56e434f7285914a50d45c2e8571990f3315",
                 "shasum": ""
             },
             "require": {
@@ -1688,7 +1688,7 @@
                 "templating",
                 "twig"
             ],
-            "time": "2016-04-21 09:36:21"
+            "time": "2016-04-24 02:17:39"
         },
         {
             "name": "martinlindhe/php-noisegenerator",
@@ -3331,12 +3331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "c02aab4624e385cb86e35d513f226144e3151000"
+                "reference": "89ef0385079dbb9698c21e4090e078a6f8097957"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/c02aab4624e385cb86e35d513f226144e3151000",
-                "reference": "c02aab4624e385cb86e35d513f226144e3151000",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/89ef0385079dbb9698c21e4090e078a6f8097957",
+                "reference": "89ef0385079dbb9698c21e4090e078a6f8097957",
                 "shasum": ""
             },
             "require": {
@@ -3387,7 +3387,7 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-04-23 18:31:39"
+            "time": "2016-04-23 22:40:34"
         },
         {
             "name": "teddy/map",
@@ -3395,17 +3395,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/map.git",
-                "reference": "61c344a2bff58e542624e72994a6a1270bf53384"
+                "reference": "18aff75afc01e586e9a90eb33748429c795269fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/map/zipball/61c344a2bff58e542624e72994a6a1270bf53384",
-                "reference": "61c344a2bff58e542624e72994a6a1270bf53384",
+                "url": "https://api.github.com/repos/Grez/map/zipball/18aff75afc01e586e9a90eb33748429c795269fe",
+                "reference": "18aff75afc01e586e9a90eb33748429c795269fe",
                 "shasum": ""
             },
             "require": {
                 "kdyby/doctrine": "~3.0@stable",
                 "martinlindhe/php-noisegenerator": "^1.0",
+                "nette/application": "~2.3.0",
                 "nette/utils": "~2.3.0"
             },
             "type": "library",
@@ -3426,7 +3427,7 @@
                 }
             ],
             "description": "Map adds entities & service for Map",
-            "time": "2016-04-21 21:11:58"
+            "time": "2016-04-25 02:35:33"
         },
         {
             "name": "teddy/publisher",
@@ -3472,12 +3473,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/websockets.git",
-                "reference": "8b7877319670e3e706790ca08c3c630eeb3485d9"
+                "reference": "cce9b20e698a56413cb6412328264ed5a060bd8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/websockets/zipball/8b7877319670e3e706790ca08c3c630eeb3485d9",
-                "reference": "8b7877319670e3e706790ca08c3c630eeb3485d9",
+                "url": "https://api.github.com/repos/Grez/websockets/zipball/cce9b20e698a56413cb6412328264ed5a060bd8c",
+                "reference": "cce9b20e698a56413cb6412328264ed5a060bd8c",
                 "shasum": ""
             },
             "require": {
@@ -3503,7 +3504,7 @@
                 }
             ],
             "description": "Helps to use websockets",
-            "time": "2016-04-20 16:21:11"
+            "time": "2016-04-25 02:34:21"
         },
         {
             "name": "textalk/websocket",

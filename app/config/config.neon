@@ -12,7 +12,7 @@ services:
             tags: [kdyby.subscriber]
 
     - Teddy\Map\MapService()
-    - Game\GameModule\Components\IMapControlFactory()
+    - Teddy\Map\Components\IMapControlFactory()
     - Game\GameModule\Components\IWebcamControlFactory()
 
 migrations:
@@ -40,17 +40,17 @@ publisher:
         items:
             - /websockets.js
     map:
-        from: %libsDir%/teddy/map/js
-        to: %wwwDir%/js/teddy/map
+        from: %libsDir%/teddy/map
+        to: %wwwDir%
         items:
-            - /astar.js
-            - /pathfinding.workers.js
+            - /js/teddy/map
+            - /css/teddy/map
 
 webloader:
     css:
         game:
             files:
-                map: teddy/game/map.less
+                map: teddy/map/map.less
     js:
         game:
             files:
