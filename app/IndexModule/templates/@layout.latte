@@ -1,30 +1,20 @@
-{**
- * @param string   $basePath web base path
- * @param array    $flashes  flash messages
- *}
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>{ifset #title}{include title|striptags} | {/ifset}Nette Sandbox</title>
+	<title>{ifset #title}{include title|striptags} | {/ifset}Teddy</title>
+	{control css}
 	<link rel="shortcut icon" href="{$basePath}/favicon.ico">
 	{block head}{/block}
-	{control css}
-	{control js}
 </head>
 
 <body>
-	<script> document.documentElement.className+=' js' </script>
+<script> document.documentElement.className += ' js' </script>
+<div n:snippet="flashes">
+	<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}" role="alert">{$flash->message}</div>
+</div>
 
-	<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
-
-	{include content}
-
-	{block scripts}
-	<script src="{$basePath}/js/jquery.js"></script>
-	<script src="{$basePath}/js/netteForms.js"></script>
-	<script src="{$basePath}/js/main.js"></script>
-	{/block}
+{include content}
+{control js}
 </body>
 </html>
