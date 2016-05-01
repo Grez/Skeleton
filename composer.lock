@@ -198,12 +198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "9f89fd349fd2b537be8a0a0c41f87f2f640dfc8a"
+                "reference": "4a9f909f73a2f70be8cd8cdd5b72ce376f21db26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/9f89fd349fd2b537be8a0a0c41f87f2f640dfc8a",
-                "reference": "9f89fd349fd2b537be8a0a0c41f87f2f640dfc8a",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/4a9f909f73a2f70be8cd8cdd5b72ce376f21db26",
+                "reference": "4a9f909f73a2f70be8cd8cdd5b72ce376f21db26",
                 "shasum": ""
             },
             "require": {
@@ -256,7 +256,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2016-03-31 10:10:15"
+            "time": "2016-04-28 05:33:48"
         },
         {
             "name": "doctrine/common",
@@ -2922,12 +2922,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "e77b14ee9c42434c00ec2ed47ffeab7465cd4fa4"
+                "reference": "48221d3de4dc22d2cd57c97e8b9361821da86609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/e77b14ee9c42434c00ec2ed47ffeab7465cd4fa4",
-                "reference": "e77b14ee9c42434c00ec2ed47ffeab7465cd4fa4",
+                "url": "https://api.github.com/repos/symfony/console/zipball/48221d3de4dc22d2cd57c97e8b9361821da86609",
+                "reference": "48221d3de4dc22d2cd57c97e8b9361821da86609",
                 "shasum": ""
             },
             "require": {
@@ -2974,7 +2974,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-20 18:52:26"
+            "time": "2016-04-26 12:00:47"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3042,12 +3042,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "d55e325bbb40117d879c3285886d3711a4f4f623"
+                "reference": "fac93f4c3c74c3e4609f98c2b98918dc6f1c4c3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/d55e325bbb40117d879c3285886d3711a4f4f623",
-                "reference": "d55e325bbb40117d879c3285886d3711a4f4f623",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/fac93f4c3c74c3e4609f98c2b98918dc6f1c4c3c",
+                "reference": "fac93f4c3c74c3e4609f98c2b98918dc6f1c4c3c",
                 "shasum": ""
             },
             "require": {
@@ -3087,7 +3087,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-02 08:08:03"
+            "time": "2016-04-12 18:27:47"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3154,12 +3154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "29167a186fbb1ad5be7315db89f4255f8233cae0"
+                "reference": "a3800ecaef9576eee34995f17dd7ecb7a97c6cb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/29167a186fbb1ad5be7315db89f4255f8233cae0",
-                "reference": "29167a186fbb1ad5be7315db89f4255f8233cae0",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/a3800ecaef9576eee34995f17dd7ecb7a97c6cb5",
+                "reference": "a3800ecaef9576eee34995f17dd7ecb7a97c6cb5",
                 "shasum": ""
             },
             "require": {
@@ -3221,7 +3221,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2016-04-20 18:54:21"
+            "time": "2016-04-28 09:49:00"
         },
         {
             "name": "symfony/yaml",
@@ -3274,16 +3274,16 @@
         },
         {
             "name": "symnedi/event-dispatcher",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Symnedi/EventDispatcher.git",
-                "reference": "a8a92d80390382bbdcdc14dc582b9a59651216a9"
+                "reference": "337bcb42aa40d655f44d477c1a5fa5060265a212"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symnedi/EventDispatcher/zipball/a8a92d80390382bbdcdc14dc582b9a59651216a9",
-                "reference": "a8a92d80390382bbdcdc14dc582b9a59651216a9",
+                "url": "https://api.github.com/repos/Symnedi/EventDispatcher/zipball/337bcb42aa40d655f44d477c1a5fa5060265a212",
+                "reference": "337bcb42aa40d655f44d477c1a5fa5060265a212",
                 "shasum": ""
             },
             "require": {
@@ -3323,7 +3323,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2015-10-27 21:57:16"
+            "time": "2016-04-30 12:51:30"
         },
         {
             "name": "teddy/framework",
@@ -3331,12 +3331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "89ef0385079dbb9698c21e4090e078a6f8097957"
+                "reference": "0ff863bb48b09a9423ecfe456dc990ed01d1c013"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/89ef0385079dbb9698c21e4090e078a6f8097957",
-                "reference": "89ef0385079dbb9698c21e4090e078a6f8097957",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/0ff863bb48b09a9423ecfe456dc990ed01d1c013",
+                "reference": "0ff863bb48b09a9423ecfe456dc990ed01d1c013",
                 "shasum": ""
             },
             "require": {
@@ -3387,7 +3387,7 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-04-23 22:40:34"
+            "time": "2016-05-01 01:03:26"
         },
         {
             "name": "teddy/map",
