@@ -1,0 +1,29 @@
+{block content}
+	<div class="chat">
+		<div n:foreach="$posts as $post" class="post">
+			<div class="date">{$post->getPostedAt()|date:'Y-m-d H:i:s'}</div>
+			<div class="author">{$post->getAuthor()->getNick()}</div>
+			<div class="msg">{$post->getMessage()}</div>
+			<div class="delete" n:if="$post->canDelete($user)"><a n:href="deleteMsg!, id => $post->getid()">[×]</a></div>
+		</div>
+	</div>
+
+	<form n:name="addMessageForm" class="chatForm">
+		<div class="form-group">
+			<div class="col-sm-11">
+				<input n:name="message">
+			</div>
+			<div class="col-sm-1">
+				<input n:name="send">
+			</div>
+		</div>
+	</form>
+
+	<style>
+		.chat { height: 400px; overflow: scroll; }
+		.chat .author, .chat .date, .chat .msg { display: inline-block; padding: 5px; }
+		.chat .post { clear: both; position: relative; }
+		.chat .post:nth-child(2n+1) { background: #eee; }
+		.chat .delete { position: absolute; top: 5px; right: 5px; }
+	</style>
+{/block}
