@@ -40,7 +40,7 @@ class ChatQuery extends \Kdyby\Doctrine\QueryObject
 	 * @param string $order
 	 * @return $this
 	 */
-	public function orderByPostedAt($order = 'DESC')
+	public function orderByPostedAt($order = 'ASC')
 	{
 		$this->select[] = function (QueryBuilder $qb) use ($order) {
 			$qb->addOrderBy('m.postedAt', $order);

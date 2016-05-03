@@ -1,11 +1,17 @@
 {block content}
-	<div class="chat">
-		<div n:foreach="$posts as $post" class="post">
+	<div class="chat" n:snippet="chat">
+		<div n:foreach="$posts as $post" class="post ajax-overlay">
 			<div class="date">{$post->getPostedAt()|date:'Y-m-d H:i:s'}</div>
 			<div class="author">{$post->getAuthor()->getNick()}</div>
 			<div class="msg">{$post->getMessage()}</div>
-			<div class="delete" n:if="$post->canDelete($user)"><a n:href="deleteMsg!, id => $post->getid()">[×]</a></div>
+			<div class="delete" n:if="$post->canDelete($user)"><a n:href="deleteMsg!, id => $post->getid()" class="ajax">[×]</a></div>
 		</div>
+
+		<script>
+			$(function () {
+				$('.chat').scrollTop($('.chat')[0].scrollHeight);
+			});
+		</script>
 	</div>
 
 	<form n:name="addMessageForm" class="chatForm">
@@ -24,6 +30,6 @@
 		.chat .author, .chat .date, .chat .msg { display: inline-block; padding: 5px; }
 		.chat .post { clear: both; position: relative; }
 		.chat .post:nth-child(2n+1) { background: #eee; }
-		.chat .delete { position: absolute; top: 5px; right: 5px; }
+		.chat .delete { position: absolute; top: 5px; right: 15px; }
 	</style>
 {/block}

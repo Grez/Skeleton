@@ -16,8 +16,9 @@ class ChatPresenter extends BasePresenter
 	{
 		$this['addMessageForm']['userId']->setValue($this->user->getId());
 
-		$query = (new ChatQuery());
+		$query = (new ChatQuery())->orderByPostedAt();
 		$posts = $this->em->fetch($query);
+		$posts->applyPaging(0, 500);
 		$this->template->posts = $posts;
 	}
 
