@@ -1301,18 +1301,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Console.git",
-                "reference": "e39565bae96e78b9e000677417c90ac2d7ccba47"
+                "reference": "5fddef95acac0aaab992d56b0cf63c9b97dbd28e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Console/zipball/e39565bae96e78b9e000677417c90ac2d7ccba47",
-                "reference": "e39565bae96e78b9e000677417c90ac2d7ccba47",
+                "url": "https://api.github.com/repos/Kdyby/Console/zipball/5fddef95acac0aaab992d56b0cf63c9b97dbd28e",
+                "reference": "5fddef95acac0aaab992d56b0cf63c9b97dbd28e",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "~2.3@dev",
                 "php": ">=5.4",
-                "symfony/console": "~2.3"
+                "symfony/console": "~2.3|~3.0"
             },
             "require-dev": {
                 "kdyby/events": "~2.4@dev|~3.0@dev",
@@ -1337,7 +1337,7 @@
                 "nette/tester": "~1.6@rc",
                 "nette/tokenizer": "~2.2@dev",
                 "nette/utils": "~2.3@dev",
-                "symfony/event-dispatcher": "~2.3",
+                "symfony/event-dispatcher": "~2.3|~3.0",
                 "tracy/tracy": "~2.3@dev"
             },
             "suggest": {
@@ -1379,7 +1379,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-04-21 21:35:56"
+            "time": "2016-05-01 20:25:11"
         },
         {
             "name": "kdyby/doctrine",
@@ -1560,12 +1560,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Events.git",
-                "reference": "616b59863e71ca1b8da3bdfdfcb3a336341c35b7"
+                "reference": "7289eff49d006c25bd693fcdc4d5ef4b6b1e0dfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Events/zipball/616b59863e71ca1b8da3bdfdfcb3a336341c35b7",
-                "reference": "616b59863e71ca1b8da3bdfdfcb3a336341c35b7",
+                "url": "https://api.github.com/repos/Kdyby/Events/zipball/7289eff49d006c25bd693fcdc4d5ef4b6b1e0dfb",
+                "reference": "7289eff49d006c25bd693fcdc4d5ef4b6b1e0dfb",
                 "shasum": ""
             },
             "require": {
@@ -1594,7 +1594,7 @@
                 "nette/tester": "~1.4",
                 "nette/tokenizer": "~2.2@dev",
                 "nette/utils": "~2.3@dev",
-                "symfony/event-dispatcher": "~2.3",
+                "symfony/event-dispatcher": "~2.3|~3.0",
                 "tracy/tracy": "~2.3@dev"
             },
             "type": "library",
@@ -1633,7 +1633,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-04-19 19:14:04"
+            "time": "2016-05-01 19:47:49"
         },
         {
             "name": "latte/latte",
@@ -2297,12 +2297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/neon.git",
-                "reference": "12fd428df496abea432b0295131386a6d37bae0e"
+                "reference": "1183ec7d9072060105b2d87a3e8b300e4b7f3e98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/neon/zipball/12fd428df496abea432b0295131386a6d37bae0e",
-                "reference": "12fd428df496abea432b0295131386a6d37bae0e",
+                "url": "https://api.github.com/repos/nette/neon/zipball/1183ec7d9072060105b2d87a3e8b300e4b7f3e98",
+                "reference": "1183ec7d9072060105b2d87a3e8b300e4b7f3e98",
                 "shasum": ""
             },
             "require": {
@@ -2342,7 +2342,7 @@
             ],
             "description": "Nette NEON: parser & generator for Nette Object Notation",
             "homepage": "http://ne-on.org",
-            "time": "2016-04-21 13:04:47"
+            "time": "2016-05-03 08:08:23"
         },
         {
             "name": "nette/php-generator",
@@ -2918,26 +2918,26 @@
         },
         {
             "name": "symfony/console",
-            "version": "2.8.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "48221d3de4dc22d2cd57c97e8b9361821da86609"
+                "reference": "eac900eacbefd68a29fa1f183590568cb5f6ffd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/48221d3de4dc22d2cd57c97e8b9361821da86609",
-                "reference": "48221d3de4dc22d2cd57c97e8b9361821da86609",
+                "url": "https://api.github.com/repos/symfony/console/zipball/eac900eacbefd68a29fa1f183590568cb5f6ffd5",
+                "reference": "eac900eacbefd68a29fa1f183590568cb5f6ffd5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
+                "php": ">=5.5.9",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1|~3.0.0",
-                "symfony/process": "~2.1|~3.0.0"
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -2947,7 +2947,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -2974,7 +2974,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-26 12:00:47"
+            "time": "2016-05-03 18:48:46"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2982,12 +2982,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "81c4c51f7fd6d0d40961bd53dd60cade32db6ed6"
+                "reference": "a158f13992a3147d466af7a23b564ac719a4ddd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/81c4c51f7fd6d0d40961bd53dd60cade32db6ed6",
-                "reference": "81c4c51f7fd6d0d40961bd53dd60cade32db6ed6",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/a158f13992a3147d466af7a23b564ac719a4ddd8",
+                "reference": "a158f13992a3147d466af7a23b564ac719a4ddd8",
                 "shasum": ""
             },
             "require": {
@@ -3034,7 +3034,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-05 16:36:54"
+            "time": "2016-05-03 18:59:18"
         },
         {
             "name": "symfony/http-foundation",
@@ -3331,12 +3331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "0ff863bb48b09a9423ecfe456dc990ed01d1c013"
+                "reference": "31ac76d0400b3d9c8829ffd48755a4502feca901"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/0ff863bb48b09a9423ecfe456dc990ed01d1c013",
-                "reference": "0ff863bb48b09a9423ecfe456dc990ed01d1c013",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/31ac76d0400b3d9c8829ffd48755a4502feca901",
+                "reference": "31ac76d0400b3d9c8829ffd48755a4502feca901",
                 "shasum": ""
             },
             "require": {
@@ -3387,7 +3387,7 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-05-01 01:03:26"
+            "time": "2016-05-01 13:10:30"
         },
         {
             "name": "teddy/map",
@@ -3395,12 +3395,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/map.git",
-                "reference": "18aff75afc01e586e9a90eb33748429c795269fe"
+                "reference": "3603626e46a499f05c00dc075363fe004e5bf7e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/map/zipball/18aff75afc01e586e9a90eb33748429c795269fe",
-                "reference": "18aff75afc01e586e9a90eb33748429c795269fe",
+                "url": "https://api.github.com/repos/Grez/map/zipball/3603626e46a499f05c00dc075363fe004e5bf7e5",
+                "reference": "3603626e46a499f05c00dc075363fe004e5bf7e5",
                 "shasum": ""
             },
             "require": {
@@ -3427,7 +3427,7 @@
                 }
             ],
             "description": "Map adds entities & service for Map",
-            "time": "2016-04-25 02:35:33"
+            "time": "2016-05-01 20:01:50"
         },
         {
             "name": "teddy/publisher",
@@ -3473,12 +3473,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/websockets.git",
-                "reference": "cce9b20e698a56413cb6412328264ed5a060bd8c"
+                "reference": "bb89b4c6c5f0c52adc51d8b205520b76f314dba6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/websockets/zipball/cce9b20e698a56413cb6412328264ed5a060bd8c",
-                "reference": "cce9b20e698a56413cb6412328264ed5a060bd8c",
+                "url": "https://api.github.com/repos/Grez/websockets/zipball/bb89b4c6c5f0c52adc51d8b205520b76f314dba6",
+                "reference": "bb89b4c6c5f0c52adc51d8b205520b76f314dba6",
                 "shasum": ""
             },
             "require": {
@@ -3504,7 +3504,7 @@
                 }
             ],
             "description": "Helps to use websockets",
-            "time": "2016-04-25 02:34:21"
+            "time": "2016-05-02 19:56:58"
         },
         {
             "name": "textalk/websocket",
