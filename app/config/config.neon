@@ -22,9 +22,7 @@ migrations:
 
 doctrine:
     metadata:
-        Teddy: %libsDir%/teddy/framework/app/entities
-        Game: %appDir%/entities
-        Map: %appDir%/Map
+        Game: %appDir% # note to self: key is namespace, value is directory
 
 publisher:
     teddyFramework:
