@@ -52,7 +52,7 @@ class EmbiggenMapCommand extends BaseCommand
 		$progress->setFormat(ProgressBar::getFormatDefinition('debug'));
 		$progress->start();
 
-		$this->mapService->onEmbiggen[] = function (MapService $mapService, Map $map) use ($progress) {
+		$this->mapService->onEmbiggen[] = function (MapService $mapService, \Game\Map\Map $map) use ($progress) {
 			$progress->advance();
 		};
 
