@@ -6,7 +6,7 @@ use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Teddy\Console\BaseCommand;
+use Game\Console\BaseCommand;
 use Teddy\Map\MapService;
 
 

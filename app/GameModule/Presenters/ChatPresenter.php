@@ -5,7 +5,6 @@ namespace Game\GameModule\Presenters;
 use Game\Entities\Chat\ChatMessage;
 use Game\Entities\Chat\ChatQuery;
 use Teddy\Forms\Form;
-use Teddy\GameModule\Presenters\BasePresenter;
 
 
 

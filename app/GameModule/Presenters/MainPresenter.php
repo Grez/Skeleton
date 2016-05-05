@@ -3,14 +3,13 @@
 namespace Game\GameModule\Presenters;
 
 use Teddy\Map\Components\IMapControlFactory;
-use Teddy\GameModule\Presenters\BasePresenter;
 use Game\Map\Map;
 use Teddy\Map\MapService;
 use Game\Map\Position;
 
 
 
-class MainPresenter extends BasePresenter
+class MainPresenter extends \Teddy\GameModule\Presenters\MainPresenter
 {
 
 	/**
