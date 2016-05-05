@@ -5,7 +5,8 @@
         "kdyby/doctrine": "~3.0@stable",
         "teddy/framework": "dev-master",
         "teddy/websockets": "dev-master",
-        "teddy/map": "dev-master"
+        "teddy/map": "dev-master",
+        "kdyby/console": "2.6.*@stable"
     },
     "license": "unlicensed",
     "authors": [

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f5f22edb51e3971dce16c02befd0e506",
-    "content-hash": "7206ef46f5b1a777afb82169a6cbc292",
+    "hash": "548fcc10a40e328076ba1e5d3cf2e30a",
+    "content-hash": "20c91ae7aac2727072cf3c01bc8c1b86",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -1297,22 +1297,22 @@
         },
         {
             "name": "kdyby/console",
-            "version": "dev-master",
+            "version": "v2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Console.git",
-                "reference": "5fddef95acac0aaab992d56b0cf63c9b97dbd28e"
+                "reference": "88b7c70721be8cfefb55c562819c852736b816c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Console/zipball/5fddef95acac0aaab992d56b0cf63c9b97dbd28e",
-                "reference": "5fddef95acac0aaab992d56b0cf63c9b97dbd28e",
+                "url": "https://api.github.com/repos/Kdyby/Console/zipball/88b7c70721be8cfefb55c562819c852736b816c5",
+                "reference": "88b7c70721be8cfefb55c562819c852736b816c5",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "~2.3@dev",
                 "php": ">=5.4",
-                "symfony/console": "~2.3|~3.0"
+                "symfony/console": "~2.3"
             },
             "require-dev": {
                 "kdyby/events": "~2.4@dev|~3.0@dev",
@@ -1337,7 +1337,7 @@
                 "nette/tester": "~1.6@rc",
                 "nette/tokenizer": "~2.2@dev",
                 "nette/utils": "~2.3@dev",
-                "symfony/event-dispatcher": "~2.3|~3.0",
+                "symfony/event-dispatcher": "~2.3",
                 "tracy/tracy": "~2.3@dev"
             },
             "suggest": {
@@ -1347,7 +1347,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -1379,7 +1379,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-05-01 20:25:11"
+            "time": "2016-04-19 11:57:00"
         },
         {
             "name": "kdyby/doctrine",
@@ -2918,26 +2918,26 @@
         },
         {
             "name": "symfony/console",
-            "version": "dev-master",
+            "version": "2.8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "eac900eacbefd68a29fa1f183590568cb5f6ffd5"
+                "reference": "48221d3de4dc22d2cd57c97e8b9361821da86609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/eac900eacbefd68a29fa1f183590568cb5f6ffd5",
-                "reference": "eac900eacbefd68a29fa1f183590568cb5f6ffd5",
+                "url": "https://api.github.com/repos/symfony/console/zipball/48221d3de4dc22d2cd57c97e8b9361821da86609",
+                "reference": "48221d3de4dc22d2cd57c97e8b9361821da86609",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": ">=5.3.9",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0"
+                "symfony/event-dispatcher": "~2.1|~3.0.0",
+                "symfony/process": "~2.1|~3.0.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -2947,7 +2947,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -2974,7 +2974,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-03 18:48:46"
+            "time": "2016-04-26 12:00:47"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3331,12 +3331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "1345d827a83d03f7be855d020b8ffa4fa952a5b8"
+                "reference": "781f21a223f6e7e751f92627643ce06ce3302533"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/1345d827a83d03f7be855d020b8ffa4fa952a5b8",
-                "reference": "1345d827a83d03f7be855d020b8ffa4fa952a5b8",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/781f21a223f6e7e751f92627643ce06ce3302533",
+                "reference": "781f21a223f6e7e751f92627643ce06ce3302533",
                 "shasum": ""
             },
             "require": {
@@ -3344,6 +3344,7 @@
                 "ipub/visual-paginator": "@dev",
                 "janmarek/webloader": "^2.4",
                 "kdyby/clock": "^0.3.0",
+                "kdyby/console": "2.6.*@stable",
                 "kdyby/doctrine": "~3.0@stable",
                 "latte/latte": "~2.3.0",
                 "nella/forms-datetime": "^2.3",
@@ -3387,7 +3388,7 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-05-05 11:41:42"
+            "time": "2016-05-05 15:56:28"
         },
         {
             "name": "teddy/map",
@@ -3395,12 +3396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/map.git",
-                "reference": "3603626e46a499f05c00dc075363fe004e5bf7e5"
+                "reference": "aec987cd2dc68fec2e831568d8e17ad0b84a0a01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/map/zipball/3603626e46a499f05c00dc075363fe004e5bf7e5",
-                "reference": "3603626e46a499f05c00dc075363fe004e5bf7e5",
+                "url": "https://api.github.com/repos/Grez/map/zipball/aec987cd2dc68fec2e831568d8e17ad0b84a0a01",
+                "reference": "aec987cd2dc68fec2e831568d8e17ad0b84a0a01",
                 "shasum": ""
             },
             "require": {
@@ -3427,7 +3428,7 @@
                 }
             ],
             "description": "Map adds entities & service for Map",
-            "time": "2016-05-01 20:01:50"
+            "time": "2016-05-05 16:04:54"
         },
         {
             "name": "teddy/publisher",
@@ -3761,7 +3762,8 @@
         "kdyby/doctrine": 0,
         "teddy/framework": 20,
         "teddy/websockets": 20,
-        "teddy/map": 20
+        "teddy/map": 20,
+        "kdyby/console": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
