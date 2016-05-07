@@ -54,8 +54,8 @@ class MainPresenter extends \Teddy\GameModule\Presenters\MainPresenter
 
 	protected function createComponentMap()
 	{
-		$map = $this->em->find(Map::class, 56);
-		$startPosition = $this->em->find(Position::class, '56;-4;-4');
+		$map = $this->em->find(Map::class, 1);
+		$startPosition = $this->em->find(Position::class, '1;0;0');
 		return $this->mapControlFactory->create($map, $startPosition);
 	}
 
