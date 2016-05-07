@@ -12,7 +12,7 @@ use Teddy\Map\MapService;
 
 
 /**
- * Example usage: php www/index.php teddy:embiggenMap -s 10 -m 55
+ * Example usage: php www/index.php teddy:embiggenMap -s 10 -m 1
  */
 class EmbiggenMapCommand extends BaseCommand
 {
