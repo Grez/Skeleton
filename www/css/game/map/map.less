@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+.rw { display: block; line-height: 0; }
+.cell { width: 10px; height: 10px; border: 1px solid #333; padding: 0; display: inline-block; line-height: 0;}
+.typeB { background: #000; }
+.typeG { background: #666; }
+.typeD { background: #66a; }
+.typeS { background: #fa0; }
+.typeW { background: #aa2; }
+.type0 { background: #333; }
+.type1 { background: #00f; }
+.type2 { background: #ff9; }
+.type3 { background: #5c5; }
+.type4 { background: #4b4; }
+.type5 { background: #3a3; }
+.type6 { background: #292; }
+.type7 { background: #181; }
+.type8 { background: #b93; }
+.type9 { background: #a82; }
+.type10 { background: #ccc; }
+.type11 { background: #fff; }
+.path { background: yellow; }
+.otherPlayer { background: #601; }
+.target { background: red; }
+.cell:hover { background: white; }
+table { border-collapse: collapse; }
+.map { width: 90%; height: 500px; overflow: scroll; margin: 10px auto; position: relative;}
+.map .map-overlay {display: none; background: rgba(60, 60, 60, 0.3); position: absolute; top: 0; left: 0;}
+.map.loading .map-overlay {display: block;}
+
+.monster { background: purple; position: relative; }
+.monster-description { display: none; position: absolute; top: 10px; left: 10px; background: black; color: #fff; border-radius: 5px; padding: 10px; line-height: 1; min-width: 140px; font-size: 11px; opacity: 1; z-index: 100; }
+.monster:hover .monster-description { display: block; }
+
+.player { background: #a00; position: relative; }
+.player-description { display: none; position: absolute; top: 10px; left: 10px; background: black; color: #fff; border-radius: 5px; padding: 10px; line-height: 1; min-width: 140px; font-size: 11px; opacity: 1; z-index: 100; }
+.player:hover .player-description { display: block; }
+
+.start { background: #333; position: relative; border: 1px solid #fff; }
+.start-description { display: none; position: absolute; top: 10px; left: 10px; background: black; color: #fff; border-radius: 5px; padding: 10px; line-height: 1; min-width: 140px; font-size: 11px; opacity: 1; z-index: 100; }
+.start:hover .start-description { display: block; }

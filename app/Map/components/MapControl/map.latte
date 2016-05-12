@@ -1,0 +1,66 @@
+<div n:snippet="map" class="ajax-overlay">
+	<div id="teddy-map"></div>
+	<script type='text/javascript'>
+		$(function() {
+			{if $renderMap}
+			{var $size = ($map->getRadius() - 1) * 20}
+			var map = '<div class="map" id="mainMap">';
+			map += '<div style="width: {$size}px">';
+			{for $x = $map->getRadius() * -1 + 1; $x < $map->getRadius() - 1; $x++}
+			map += '<div class="rw">';
+			{for $y = $map->getRadius() * -1 + 1; $y < $map->getRadius() - 1; $y++}
+			{var $position = $map->getPosition($x, $y)}
+			{var $class = "type" . $position->getHeight()}
+			{var $cell = '<div id="' . $position->getDivId() . '" data-virtual-x="' . $position->getVirtualX() . '" data-virtual-y="' . $position->getVirtualY() . '" class="cell ' . $class . '" title="' . $position->getId() . '"></div>'}
+			map += {$cell}
+			{/for}
+					map += '</div>';
+			{/for}
+			map += '</div>';
+			map += '<div class="map-overlay" style="width: {$size}px; height: {$size}px"></div>';
+			map += '</div>';
+
+			localStorage.setItem('mapTime', {$map->getPositionsLastModifiedAt()|date:'U'});
+			localStorage.setItem('map', map);
+			localStorage.setItem('mapJs', JSON.stringify({$map->getJsIncidenceMatrix()|noescape}));
+			{/if}
+
+			if (localStorage.getItem('mapTime') !== {$map->getPositionsLastModifiedAt()|date:'U'}) {
+				$('#renderMap').click();
+
+			} else {
+				document.getElementById("teddy-map").innerHTML = localStorage.getItem('map');
+				{var $position = $user->getEntity()->getPosition()}
+				window.startPosition = [{$position->getVirtualX()}, {$position->getVirtualY()}];
+				window.pathfinding = new Pathfinding(window.graph, window.startPosition);
+
+				var monsters = [];
+				{foreach $monsters as $monster}
+					monsters.push({
+						name: {$monster->getName()},
+						level: {$monster->getLevel()},
+						hp: {$monster->getMaxHp()},
+						attack: {$monster->getAttack()},
+						positionId: {$monster->getPosition()->getDivId()}
+					});
+				{/foreach}
+				window.monsters = new Monsters(monsters);
+
+				var players = [];
+				{foreach $players as $player}
+				players.push({
+					name: {$player->getNick()},
+					level: {$player->getLevel()},
+					positionId: {$player->getPosition()->getDivId()}
+				});
+				{/foreach}
+				window.players = new Players(players);
+			}
+		});
+	</script>
+
+	<form n:name="moveForm" n:class="form-inline, ajax, text-center" style="display: none;">
+		Your movement will cost {input cost} {input move}
+	</form>
+	<a n:href="renderMap!" class="ajax" id="renderMap" style="display: none;">Refresh map</a>
+</div>
