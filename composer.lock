@@ -408,12 +408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
+                "reference": "803a2ed9fea02f9ca47cd45395089fe78769a392"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/90b2128806bfde671b6952ab8bea493942c1fdae",
-                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/803a2ed9fea02f9ca47cd45395089fe78769a392",
+                "reference": "803a2ed9fea02f9ca47cd45395089fe78769a392",
                 "shasum": ""
             },
             "require": {
@@ -467,7 +467,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2015-11-06 14:35:42"
+            "time": "2016-05-12 17:23:41"
         },
         {
             "name": "doctrine/instantiator",
@@ -656,12 +656,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "2f60d6a1f81e85183e98f3422cdab458e56ccfa3"
+                "reference": "b3aa8254e480926adeb2a2df30a0b0ac8328d639"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2f60d6a1f81e85183e98f3422cdab458e56ccfa3",
-                "reference": "2f60d6a1f81e85183e98f3422cdab458e56ccfa3",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/b3aa8254e480926adeb2a2df30a0b0ac8328d639",
+                "reference": "b3aa8254e480926adeb2a2df30a0b0ac8328d639",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +727,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2016-05-12 05:27:03"
+            "time": "2016-05-13 02:47:26"
         },
         {
             "name": "evenement/evenement",
@@ -1641,12 +1641,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "d87f4f5f96f4220dd4be379ac052b9afef00bffb"
+                "reference": "6f443b8f633a152188d1113f67568578fe5ab315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/d87f4f5f96f4220dd4be379ac052b9afef00bffb",
-                "reference": "d87f4f5f96f4220dd4be379ac052b9afef00bffb",
+                "url": "https://api.github.com/repos/nette/latte/zipball/6f443b8f633a152188d1113f67568578fe5ab315",
+                "reference": "6f443b8f633a152188d1113f67568578fe5ab315",
                 "shasum": ""
             },
             "require": {
@@ -1688,7 +1688,7 @@
                 "templating",
                 "twig"
             ],
-            "time": "2016-05-09 16:15:54"
+            "time": "2016-05-13 19:10:53"
         },
         {
             "name": "martinlindhe/php-noisegenerator",
@@ -2922,12 +2922,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "48221d3de4dc22d2cd57c97e8b9361821da86609"
+                "reference": "4b2f55e83f95f52eb17a0f0accd9bfac8ade6080"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/48221d3de4dc22d2cd57c97e8b9361821da86609",
-                "reference": "48221d3de4dc22d2cd57c97e8b9361821da86609",
+                "url": "https://api.github.com/repos/symfony/console/zipball/4b2f55e83f95f52eb17a0f0accd9bfac8ade6080",
+                "reference": "4b2f55e83f95f52eb17a0f0accd9bfac8ade6080",
                 "shasum": ""
             },
             "require": {
@@ -2974,7 +2974,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-26 12:00:47"
+            "time": "2016-05-13 17:56:25"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3042,12 +3042,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "fac93f4c3c74c3e4609f98c2b98918dc6f1c4c3c"
+                "reference": "7e7799e22166165b268cb9a5752f28e947277963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/fac93f4c3c74c3e4609f98c2b98918dc6f1c4c3c",
-                "reference": "fac93f4c3c74c3e4609f98c2b98918dc6f1c4c3c",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/7e7799e22166165b268cb9a5752f28e947277963",
+                "reference": "7e7799e22166165b268cb9a5752f28e947277963",
                 "shasum": ""
             },
             "require": {
@@ -3060,7 +3060,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -3087,7 +3087,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-12 18:27:47"
+            "time": "2016-05-13 18:13:23"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3154,12 +3154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "7220655bd709c7bd1c83ccdb8b8a89e46cb740b3"
+                "reference": "65899c673d3449652a8991f0aa6491fccba4b356"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/7220655bd709c7bd1c83ccdb8b8a89e46cb740b3",
-                "reference": "7220655bd709c7bd1c83ccdb8b8a89e46cb740b3",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/65899c673d3449652a8991f0aa6491fccba4b356",
+                "reference": "65899c673d3449652a8991f0aa6491fccba4b356",
                 "shasum": ""
             },
             "require": {
@@ -3188,7 +3188,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -3221,7 +3221,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2016-05-03 12:24:23"
+            "time": "2016-05-13 18:13:23"
         },
         {
             "name": "symfony/yaml",
@@ -3229,12 +3229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "407e31ad9742ace5c3d01642f02a3b2e6062bae5"
+                "reference": "641bbd0fc1b671f896f7815169587dced3588f5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/407e31ad9742ace5c3d01642f02a3b2e6062bae5",
-                "reference": "407e31ad9742ace5c3d01642f02a3b2e6062bae5",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/641bbd0fc1b671f896f7815169587dced3588f5c",
+                "reference": "641bbd0fc1b671f896f7815169587dced3588f5c",
                 "shasum": ""
             },
             "require": {
@@ -3243,7 +3243,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -3270,7 +3270,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-30 14:44:34"
+            "time": "2016-05-14 15:06:20"
         },
         {
             "name": "symnedi/event-dispatcher",
@@ -3396,12 +3396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/map.git",
-                "reference": "d50ca56dfaf00b371f69f4cfe4bd7f1f7d9f2f29"
+                "reference": "4a6883a04057aa723c1349955ab126afdb1e2e8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/map/zipball/d50ca56dfaf00b371f69f4cfe4bd7f1f7d9f2f29",
-                "reference": "d50ca56dfaf00b371f69f4cfe4bd7f1f7d9f2f29",
+                "url": "https://api.github.com/repos/Grez/map/zipball/4a6883a04057aa723c1349955ab126afdb1e2e8b",
+                "reference": "4a6883a04057aa723c1349955ab126afdb1e2e8b",
                 "shasum": ""
             },
             "require": {
@@ -3429,7 +3429,7 @@
                 }
             ],
             "description": "Map adds entities & service for Map",
-            "time": "2016-05-11 13:34:04"
+            "time": "2016-05-15 00:16:03"
         },
         {
             "name": "teddy/publisher",
@@ -3660,12 +3660,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-eventmanager.git",
-                "reference": "e6bf66a22fe990ff477e66055c502f3ba685020d"
+                "reference": "28b26fff230ffb8976d1d71fd1305ce886326d86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/e6bf66a22fe990ff477e66055c502f3ba685020d",
-                "reference": "e6bf66a22fe990ff477e66055c502f3ba685020d",
+                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/28b26fff230ffb8976d1d71fd1305ce886326d86",
+                "reference": "28b26fff230ffb8976d1d71fd1305ce886326d86",
                 "shasum": ""
             },
             "require": {
@@ -3706,7 +3706,7 @@
                 "events",
                 "zf2"
             ],
-            "time": "2016-03-07 15:48:37"
+            "time": "2016-05-12 14:58:33"
         },
         {
             "name": "zenify/doctrine-migrations",
