@@ -3331,12 +3331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "5a96fdc0325fa055394068222f9dc76a07ac0819"
+                "reference": "19e9923fb631d5bc65a69e1bb030bc1b8f2fa8d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/5a96fdc0325fa055394068222f9dc76a07ac0819",
-                "reference": "5a96fdc0325fa055394068222f9dc76a07ac0819",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/19e9923fb631d5bc65a69e1bb030bc1b8f2fa8d4",
+                "reference": "19e9923fb631d5bc65a69e1bb030bc1b8f2fa8d4",
                 "shasum": ""
             },
             "require": {
@@ -3388,7 +3388,7 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-05-11 13:24:47"
+            "time": "2016-05-15 01:42:59"
         },
         {
             "name": "teddy/map",
@@ -3396,12 +3396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/map.git",
-                "reference": "4a6883a04057aa723c1349955ab126afdb1e2e8b"
+                "reference": "f819d7568b4582e9c306aba8a0c40d511be2cdaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/map/zipball/4a6883a04057aa723c1349955ab126afdb1e2e8b",
-                "reference": "4a6883a04057aa723c1349955ab126afdb1e2e8b",
+                "url": "https://api.github.com/repos/Grez/map/zipball/f819d7568b4582e9c306aba8a0c40d511be2cdaa",
+                "reference": "f819d7568b4582e9c306aba8a0c40d511be2cdaa",
                 "shasum": ""
             },
             "require": {
@@ -3429,7 +3429,7 @@
                 }
             ],
             "description": "Map adds entities & service for Map",
-            "time": "2016-05-15 00:16:03"
+            "time": "2016-05-15 16:18:55"
         },
         {
             "name": "teddy/publisher",
@@ -3475,12 +3475,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/websockets.git",
-                "reference": "bb89b4c6c5f0c52adc51d8b205520b76f314dba6"
+                "reference": "7194a764cd708bfef586abae26bb53c1840c136a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/websockets/zipball/bb89b4c6c5f0c52adc51d8b205520b76f314dba6",
-                "reference": "bb89b4c6c5f0c52adc51d8b205520b76f314dba6",
+                "url": "https://api.github.com/repos/Grez/websockets/zipball/7194a764cd708bfef586abae26bb53c1840c136a",
+                "reference": "7194a764cd708bfef586abae26bb53c1840c136a",
                 "shasum": ""
             },
             "require": {
@@ -3506,7 +3506,7 @@
                 }
             ],
             "description": "Helps to use websockets",
-            "time": "2016-05-02 19:56:58"
+            "time": "2016-05-15 16:34:55"
         },
         {
             "name": "textalk/websocket",
