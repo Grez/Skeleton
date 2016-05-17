@@ -1,7 +1,9 @@
 {block content}
 	{ifset $player}
 		<h1>{$player->getNick()}</h1>
-		<table>
+		<p><a n:href="Messages:new to => $player->getNick()">Send message</a></p>
+
+		<table class="table table-striped">
 			<tr n:if="$player->getLocation()">
 				<th>Location</th>
 				<td>{$player->getLocation()}</td>
@@ -20,10 +22,9 @@
 			</tr>
 			<tr n:if="$player->getAvatar()">
 				<th>Avatar</th>
-				<td>{$player->getAvatar()}</td>
+				<td><img src="{$player|img}" width="100"></td>
 			</tr>
 		</table>
-		<a n:href="Messages:new to => $player->getNick()">Send message</a>
 
 	{else}
 
