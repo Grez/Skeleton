@@ -3331,12 +3331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "d79df17ee954c2f7019759e1654039318b42e62b"
+                "reference": "85a4bb072e6c61127b14a32ec3ccfd3515f8e60b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/d79df17ee954c2f7019759e1654039318b42e62b",
-                "reference": "d79df17ee954c2f7019759e1654039318b42e62b",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/85a4bb072e6c61127b14a32ec3ccfd3515f8e60b",
+                "reference": "85a4bb072e6c61127b14a32ec3ccfd3515f8e60b",
                 "shasum": ""
             },
             "require": {
@@ -3388,7 +3388,7 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-05-17 00:15:11"
+            "time": "2016-05-17 18:03:24"
         },
         {
             "name": "teddy/map",
