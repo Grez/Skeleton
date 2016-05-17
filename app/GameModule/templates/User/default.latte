@@ -1,7 +1,27 @@
 {block content}
-	<h1>User</h1>
+	<h1>Users</h1>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Player</th>
+				<th>Level</th>
+				<th>Experience</th>
+				<th>Current HP</th>
+				<th>Position</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr n:foreach="$players as $player">
+				<td><a n:href="detail id => $player->getNick()">{$player->getNick()}</a></td>
+				<td>{$player->getLevel()}</td>
+				<td>{$player->getExperience()}</td>
+				<td>{$player->getCurrentHp()}</td>
+				<td>{$player->getPosition()->getVirtualX()};{$player->getPosition()->getVirtualY()}</td>
+			</tr>
+		</tbody>
+	</table>
 	<ul n:if="count($players)">
-		<li n:foreach="$players as $player"><a n:href="detail id => $player->getNick()">{$player->getNick()}</a></li>
+
 	</ul>
 	{control visualPaginator}
 {/block}
