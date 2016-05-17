@@ -52,6 +52,7 @@
 	<div n:snippet="flashes">
 		<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}" role="alert">{$flash->message}</div>
 	</div>
+	<div id="websockets-alert" class="alert alert-warning" role="alert" style="display: none;">Unable to connect to Web Socket server. Some services may not work as intended.</div>
 
 	{control events}
 	{include content}

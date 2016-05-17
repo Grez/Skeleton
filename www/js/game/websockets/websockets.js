@@ -36,6 +36,7 @@
 			self.conn.onopen = function(e) {
 				self.attempt = 0; // successful connection, let's set attempts back to 0
 				self.authorize(self.userId, self.apiKey);
+				$('#websockets-alert').hide('slow');
 				console.log("Connection established!");
 			};
 
@@ -54,6 +55,7 @@
 				}
 
 				console.log('Waiting for ' + self.intervals[self.attempt] + ' s and going to try again');
+				$('#websockets-alert').show('slow');
 				setTimeout(function () {
 					self.makeConnection();
 				}, self.intervals[self.attempt] * 1000);
