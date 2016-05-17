@@ -25,6 +25,7 @@ class UserPresenter extends \Teddy\GameModule\Presenters\UserPresenter
 		$control = $this->webcamControlFactory->create();
 		$control->onImageCreated = function (WebcamControl $webcamControl, $filename) {
 			$this->user->setAvatar($filename);
+			$this->em->flush();
 			$this->successFlashMessage('Avatar updated');
 			$this->redirect('detail');
 		};
