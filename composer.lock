@@ -1641,12 +1641,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "6f443b8f633a152188d1113f67568578fe5ab315"
+                "reference": "b7ec5a8cdcaf65501ca28a0d8de3f797cdfa7e9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/6f443b8f633a152188d1113f67568578fe5ab315",
-                "reference": "6f443b8f633a152188d1113f67568578fe5ab315",
+                "url": "https://api.github.com/repos/nette/latte/zipball/b7ec5a8cdcaf65501ca28a0d8de3f797cdfa7e9f",
+                "reference": "b7ec5a8cdcaf65501ca28a0d8de3f797cdfa7e9f",
                 "shasum": ""
             },
             "require": {
@@ -1688,7 +1688,7 @@
                 "templating",
                 "twig"
             ],
-            "time": "2016-05-13 19:10:53"
+            "time": "2016-05-15 16:57:19"
         },
         {
             "name": "martinlindhe/php-noisegenerator",
@@ -2188,12 +2188,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "15b27cfff3dca5d49ae71051196a2de2bf01328c"
+                "reference": "ce075fe35257addb0565d35fc7959bdfa70fe120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/15b27cfff3dca5d49ae71051196a2de2bf01328c",
-                "reference": "15b27cfff3dca5d49ae71051196a2de2bf01328c",
+                "url": "https://api.github.com/repos/nette/http/zipball/ce075fe35257addb0565d35fc7959bdfa70fe120",
+                "reference": "ce075fe35257addb0565d35fc7959bdfa70fe120",
                 "shasum": ""
             },
             "require": {
@@ -2234,7 +2234,7 @@
             ],
             "description": "Nette HTTP Component",
             "homepage": "https://nette.org",
-            "time": "2016-04-21 11:04:40"
+            "time": "2016-05-16 20:56:25"
         },
         {
             "name": "nette/mail",
@@ -2297,12 +2297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/neon.git",
-                "reference": "1183ec7d9072060105b2d87a3e8b300e4b7f3e98"
+                "reference": "7099edcaaed87e92140761a3f3884b1859558a85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/neon/zipball/1183ec7d9072060105b2d87a3e8b300e4b7f3e98",
-                "reference": "1183ec7d9072060105b2d87a3e8b300e4b7f3e98",
+                "url": "https://api.github.com/repos/nette/neon/zipball/7099edcaaed87e92140761a3f3884b1859558a85",
+                "reference": "7099edcaaed87e92140761a3f3884b1859558a85",
                 "shasum": ""
             },
             "require": {
@@ -2342,7 +2342,7 @@
             ],
             "description": "Nette NEON: parser & generator for Nette Object Notation",
             "homepage": "http://ne-on.org",
-            "time": "2016-05-03 08:08:23"
+            "time": "2016-05-16 19:37:48"
         },
         {
             "name": "nette/php-generator",
@@ -3331,12 +3331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/teddy.git",
-                "reference": "19e9923fb631d5bc65a69e1bb030bc1b8f2fa8d4"
+                "reference": "d79df17ee954c2f7019759e1654039318b42e62b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/teddy/zipball/19e9923fb631d5bc65a69e1bb030bc1b8f2fa8d4",
-                "reference": "19e9923fb631d5bc65a69e1bb030bc1b8f2fa8d4",
+                "url": "https://api.github.com/repos/Grez/teddy/zipball/d79df17ee954c2f7019759e1654039318b42e62b",
+                "reference": "d79df17ee954c2f7019759e1654039318b42e62b",
                 "shasum": ""
             },
             "require": {
@@ -3388,7 +3388,7 @@
                 }
             ],
             "description": "Framework for MMOBB-Games",
-            "time": "2016-05-15 01:42:59"
+            "time": "2016-05-17 00:15:11"
         },
         {
             "name": "teddy/map",

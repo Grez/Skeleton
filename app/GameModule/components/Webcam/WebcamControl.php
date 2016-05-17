@@ -6,8 +6,8 @@ use Nette\Utils\ArrayHash;
 use Teddy;
 use Nette\Application\UI\Control;
 use Teddy\Forms\Form;
+use Teddy\Images\ImageService;
 use Teddy\Security\User;
-use Teddy\Services\ImageService;
 
 
 
