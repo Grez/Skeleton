@@ -23,28 +23,28 @@ class User extends \Teddy\Entities\User\User
 	protected $position;
 
 	/**
-	 * @ORM\Column(type="integer", nullable=FALSE)
+	 * @ORM\Column(type="integer", nullable=FALSE, options={"default": "0"})
 	 * @var int
 	 */
-	protected $moves;
+	protected $moves = 0;
 
 	/**
-	 * @ORM\Column(type="integer", nullable=FALSE)
+	 * @ORM\Column(type="integer", nullable=FALSE, options={"default": "0"})
 	 * @var int
 	 */
-	protected $level;
+	protected $level = 0;
 
 	/**
-	 * @ORM\Column(type="integer", nullable=FALSE)
+	 * @ORM\Column(type="integer", nullable=FALSE, options={"default": "0"})
 	 * @var int
 	 */
-	protected $experience;
+	protected $experience = 0;
 
 	/**
-	 * @ORM\Column(type="integer", nullable=FALSE)
+	 * @ORM\Column(type="integer", nullable=FALSE, options={"default": "0"})
 	 * @var int
 	 */
-	protected $currentHp;
+	protected $currentHp = 0;
 
 
 
@@ -57,8 +57,8 @@ class User extends \Teddy\Entities\User\User
 	{
 		parent::__construct($email, $nick, $password);
 		$this->moves = 1440;
-		$this->currentHp = $this->getMaxHp();
 		$this->updateLevelFromExperience();
+		$this->currentHp = $this->getMaxHp();
 	}
 
 
