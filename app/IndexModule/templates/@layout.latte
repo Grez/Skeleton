@@ -10,11 +10,42 @@
 
 <body>
 <script> document.documentElement.className += ' js' </script>
-<div n:snippet="flashes">
-	<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}" role="alert">{$flash->message}</div>
-</div>
 
-{include content}
-{control js}
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" n:href="this">Teddy</a>
+			</div><!--/.navbar-collapse -->
+		</div>
+	</nav>
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Teddy Framework</h1>
+			<p>
+				This is a simple showcase of Teddy Framework.<br>
+				You can register, try to move on map, kill some monsters, gather experience, level up and chat with other players.<br>
+				There is also <a n:href=":Admin:Main:default">Administration</a>, though you first need to log into the game as an admin.<br>
+				You may use user <b>admin</b> with password <b>admin</b>. Though please don't delete that user and don't change his password either.<br>
+				Thanks!
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div n:snippet="flashes">
+			<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}" role="alert">{$flash->message}</div>
+		</div>
+
+
+		{include content}
+
+		<hr>
+		<footer>
+			<p>&copy; 2016 ACME - A Company Makes Everything</p>
+		</footer>
+	</div> <!-- /container -->
+	{control js}
 </body>
 </html>
