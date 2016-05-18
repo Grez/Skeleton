@@ -23,19 +23,19 @@ class Monster
 	protected $position;
 
 	/**
-	 * @ORM\Column(type="string")
+	 * @ORM\Column(type="string", nullable=FALSE)
 	 * @var string
 	 */
 	protected $name;
 
 	/**
-	 * @ORM\Column(type="integer")
+	 * @ORM\Column(type="integer", nullable=FALSE)
 	 * @var int
 	 */
 	protected $level;
 
 	/**
-	 * @ORM\Column(type="integer")
+	 * @ORM\Column(type="integer", nullable=FALSE)
 	 * @var int
 	 */
 	protected $currentHp;
@@ -47,6 +47,7 @@ class Monster
 		$this->position = $position;
 		$this->name = $name;
 		$this->level = $level;
+		$this->currentHp = $this->getMaxHp();
 	}
 
 
