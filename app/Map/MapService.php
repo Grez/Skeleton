@@ -59,10 +59,13 @@ class MapService extends \Teddy\Map\MapService
 	 *
 	 * @param User $user
 	 * @param Position[] $path
+	 * @return Monster[]
 	 * @throws \InvalidArgumentException
 	 */
 	public function movePlayer(User $user, $path)
 	{
+		$attackedMonsters = [];
+
 		if (!$this->isPathValid($user->getPosition(), $path)) {
 			throw new \InvalidArgumentException('Invalid path (You are skipping tiles)');
 		}
@@ -74,10 +77,13 @@ class MapService extends \Teddy\Map\MapService
 
 		$user->setPosition($this->getPathDestination($path));
 		$user->setMoves($user->getMoves() - $pathWeight);
+
 		foreach ($this->getPathDestination($path)->getMonsters() as $monster) {
 			$this->attackService->createAttack($user, $monster);
+			$attackedMonsters[] = $monster;
 		}
 		$this->em->flush();
+		return $attackedMonsters;
 	}
 
 }

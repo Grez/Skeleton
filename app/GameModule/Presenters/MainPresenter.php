@@ -68,7 +68,12 @@ class MainPresenter extends \Teddy\GameModule\Presenters\MainPresenter
 		$players = $this->em->getRepository(User::class)->fetch($query);
 
 		$control = $this->mapControlFactory->create($map, $monsters, $players);
-		$control->onMovement[] = function (MapControl $mapControl, \Game\Entities\User\User $user) {
+		$control->onMovementSuccess[] = function (MapControl $mapControl, \Game\Entities\User\User $user, $result) {
+			$this->successFlashMessage($result);
+			$this->redrawControl();
+		};
+		$control->onMovementError[] = function (MapControl $mapControl, \Game\Entities\User\User $user, $error) {
+			$this->warningFlashMessage($error);
 			$this->redrawControl();
 		};
 		return $control;

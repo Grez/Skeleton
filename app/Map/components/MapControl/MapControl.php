@@ -3,6 +3,7 @@
 namespace Game\Map\Components;
 
 use Game\Map\MapService;
+use Game\Map\Monster;
 use Kdyby\Doctrine\EntityManager;
 use Kdyby\Doctrine\ResultSet;
 use Nette\Utils\ArrayHash;
@@ -14,7 +15,8 @@ use Teddy\Forms\Form;
 
 
 /**
- * @method void onMovement(MapControl $this, \Game\Entities\User\User $user)
+ * @method void onMovementSuccess(MapControl $this, \Game\Entities\User\User $user, string $result)
+ * @method void onMovementError(MapControl $this, \Game\Entities\User\User $user, string $error)
  */
 class MapControl extends Teddy\Map\Components\MapControl
 {
@@ -22,7 +24,12 @@ class MapControl extends Teddy\Map\Components\MapControl
 	/**
 	 * @var array
 	 */
-	public $onMovement = [];
+	public $onMovementSuccess = [];
+
+	/**
+	 * @var array
+	 */
+	public $onMovementError = [];
 
 	/**
 	 * @var ResultSet
@@ -91,8 +98,24 @@ class MapControl extends Teddy\Map\Components\MapControl
 			}
 		}
 
-		$this->mapService->movePlayer($this->user->getEntity(), $orderedPositions);
-		$this->onMovement($this, $this->user->getEntity());
+		try {
+			$attackedMonsters = $this->mapService->movePlayer($this->user->getEntity(), $orderedPositions);
+
+		} catch (\InvalidArgumentException $e) {
+			$this->onMovementError($this, $this->user->getEntity(), $e->getMessage());
+			$this->redrawControl();
+			return;
+		}
+
+		$result = 'You have moved to location.';
+		if ($attackedMonsters) {
+			$names = array_map(function (Monster $monster) {
+				return $monster->getName();
+			}, $attackedMonsters);
+			$result = 'You have moved to location and attacked monster ' . implode(', ', $names);
+		}
+
+		$this->onMovementSuccess($this, $this->user->getEntity(), $result);
 		$form['positions']->setValue(NULL);
 		$this->redrawControl();
 	}

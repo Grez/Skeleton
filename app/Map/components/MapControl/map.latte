@@ -59,8 +59,11 @@
 		});
 	</script>
 
-	<form n:name="moveForm" n:class="form-inline, ajax, text-center" style="display: none;">
-		Your movement will cost {input cost} {input move}
+	<form n:name="moveForm" n:class="form-inline, ajax, text-center">
+		<div n:foreach="$form->errors as $error" class="alert alert-danger">
+			<p>{$error}</p>
+		</div>
+		Your movement will cost {input cost} <input n:name="move">
 	</form>
 	<a n:href="renderMap!" class="ajax" id="renderMap" style="display: none;">Refresh map</a>
 </div>
