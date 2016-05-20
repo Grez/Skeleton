@@ -69,3 +69,5 @@ console:
         generateMap: Game\Map\Console\GenerateMapCommand
         embiggenMap: Game\Map\Console\EmbiggenMapCommand
         generateMonsters: Game\Map\Console\GenerateMonstersCommand
+        regenerateHp: Game\Map\Console\RegenerateHpCommand
+        addMoves: Game\Map\Console\AddMovesCommand
