@@ -22,7 +22,7 @@ class UserPresenter extends \Teddy\GameModule\Presenters\UserPresenter
 
 	public function renderDefault()
 	{
-		$query = (new \Game\Entities\User\UserListQuery())->orderBylevel('DESC');
+		$query = (new \Game\Entities\User\UserListQuery())->orderByExperience('DESC');
 		$result = $this->users->fetch($query);
 		$result->applyPaginator($this['visualPaginator']->getPaginator(), 20);
 		$this->template->players = $result;
