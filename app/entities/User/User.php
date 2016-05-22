@@ -172,6 +172,16 @@ class User extends \Teddy\Entities\User\User
 
 
 	/**
+	 * @return bool
+	 */
+	public function isWounded()
+	{
+		return $this->getHpPercentage() < 50;
+	}
+
+
+
+	/**
 	 * @return int
 	 */
 	public function getAttack()

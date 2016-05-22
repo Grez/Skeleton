@@ -85,6 +85,13 @@ class MapControl extends Teddy\Map\Components\MapControl
 			'id IN' => $positionsFromForm,
 		]);
 
+		if ($this->user->getEntity()->isWounded()) {
+			$this->onMovementError($this, $this->user->getEntity(), 'You are too wounded for moving. Wait few minutes before you regenerate.');
+			$form['positions']->setValue(NULL);
+			$this->redrawControl();
+			return;
+		}
+
 		$orderedPositions = [];
 		$currentPosition = $this->user->getEntity()->getPosition();
 		for ($i = 0; $i < count($positionsFromForm); $i++) {
