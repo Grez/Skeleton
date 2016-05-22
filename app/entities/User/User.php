@@ -56,7 +56,7 @@ class User extends \Teddy\Entities\User\User
 	public function __construct($email, $nick = '', $password = '')
 	{
 		parent::__construct($email, $nick, $password);
-		$this->moves = 1440;
+		$this->moves = 14400;
 		$this->updateLevelFromExperience();
 		$this->currentHp = $this->getMaxHp();
 	}

@@ -20,14 +20,14 @@ class AddMovesCommand extends BaseCommand
 	protected function configure()
 	{
 		$this->setName('teddy:map:addMoves')
-			->setDescription('Adds 50 moves');
+			->setDescription('Adds 10 moves');
 	}
 
 
 
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
-		$sql = 'UPDATE user SET moves = moves + 50';
+		$sql = 'UPDATE user SET moves = moves + 10';
 		$this->entityManager->getConnection()->executeQuery($sql);
 		return 0;
 	}
