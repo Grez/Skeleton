@@ -105,6 +105,14 @@ class MapControl extends Teddy\Map\Components\MapControl
 			}
 		}
 
+		// Probably just started from wrong position
+		if (count($orderedPositions) !== count($positionsFromForm)) {
+			$this->onMovementError($this, $this->user->getEntity(), 'Ouch something went wrong. Please try again.');
+			$form['positions']->setValue(NULL);
+			$this->redrawControl();
+			return;
+		}
+
 		try {
 			$attackedMonsters = $this->mapService->movePlayer($this->user->getEntity(), $orderedPositions);
 
