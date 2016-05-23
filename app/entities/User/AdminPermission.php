@@ -2,9 +2,8 @@
 
 namespace Game\Entities\User;
 
-use Doctrine\ORM\Mapping as ORM;
 use Kdyby\Doctrine\Entities\Attributes\Identifier;
-use Nette;
+use Doctrine\ORM\Mapping as ORM;
 
 
 
