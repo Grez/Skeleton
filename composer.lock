@@ -3396,12 +3396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grez/map.git",
-                "reference": "3d377c1f49ef4bedf4992855686680d9ca88a435"
+                "reference": "51e7d5305b7c2f7269b1795902d62d45179ce2a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grez/map/zipball/3d377c1f49ef4bedf4992855686680d9ca88a435",
-                "reference": "3d377c1f49ef4bedf4992855686680d9ca88a435",
+                "url": "https://api.github.com/repos/Grez/map/zipball/51e7d5305b7c2f7269b1795902d62d45179ce2a7",
+                "reference": "51e7d5305b7c2f7269b1795902d62d45179ce2a7",
                 "shasum": ""
             },
             "require": {
@@ -3429,7 +3429,7 @@
                 }
             ],
             "description": "Map adds entities & service for Map",
-            "time": "2016-05-22 23:59:16"
+            "time": "2016-05-23 00:38:44"
         },
         {
             "name": "teddy/publisher",
