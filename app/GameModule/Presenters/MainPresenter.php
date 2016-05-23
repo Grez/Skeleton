@@ -2,8 +2,14 @@
 
 namespace Game\GameModule\Presenters;
 
-use Teddy\Map\Components\IMapControlFactory;
+use Doctrine\ORM\AbstractQuery;
+use Game\Entities\User\User;
+use Game\Map\Components\IMapControlFactory;
+use Game\Map\Components\MapControl;
 use Game\Map\Map;
+use Game\Map\Monster;
+use Game\Map\MonstersQuery;
+use Teddy\Entities\User\UserListQuery;
 use Teddy\Map\MapService;
 use Game\Map\Position;
 
@@ -55,8 +61,22 @@ class MainPresenter extends \Teddy\GameModule\Presenters\MainPresenter
 	protected function createComponentMap()
 	{
 		$map = $this->em->find(Map::class, 1);
-		$startPosition = $this->em->find(Position::class, '1;0;0');
-		return $this->mapControlFactory->create($map, $startPosition);
+		$query = (new MonstersQuery())->onlyLiving();
+		$monsters = $this->em->getRepository(Monster::class)->fetch($query);
+
+		$query = (new UserListQuery())->onlyUndeleted()->excludeUser($this->user);
+		$players = $this->em->getRepository(User::class)->fetch($query);
+
+		$control = $this->mapControlFactory->create($map, $monsters, $players);
+		$control->onMovementSuccess[] = function (MapControl $mapControl, \Game\Entities\User\User $user, $result) {
+			$this->successFlashMessage($result);
+			$this->redrawControl();
+		};
+		$control->onMovementError[] = function (MapControl $mapControl, \Game\Entities\User\User $user, $error) {
+			$this->warningFlashMessage($error);
+			$this->redrawControl();
+		};
+		return $control;
 	}
 
 }

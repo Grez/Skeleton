@@ -30,6 +30,7 @@
 			<ul class="nav navbar-nav">
 				<li n:class="$presenter->isLinkCurrent('Messages:*') ? 'active'"><a n:href="Messages:default">Messages</a></li>
 				<li n:class="$presenter->isLinkCurrent('Forum:*') ? 'active'"><a n:href="Forum:default">Forum</a></li>
+				<li n:class="$presenter->isLinkCurrent('Attacks:*') ? 'active'"><a n:href="Attacks:default">Attacks</a></li>
 				<li n:class="$presenter->isLinkCurrent('User:*') ? 'active', dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						Users <span class="caret"></span>
@@ -47,6 +48,24 @@
 		</div>
 	</div>
 </nav>
+<nav class="navbar infobar" n:snippet="infobar">
+	<div class="container">
+		<div class="navbar-collapse">
+			<div class="text-right col-md-6">
+				<ul class="nav navbar-nav">
+					{control events}
+				</ul>
+			</div>
+			<div class="text-right col-md-6">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a>Level: {$user->getLevel()}, Exp: {$user->getExperience()}</a></li>
+					<li><a>{$user->getCurrentHp()}/{$user->getMaxHp()} HP</a></li>
+					<li><a>Moves: {$user->getMoves()}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
 
 <div class="container">
 	<div n:snippet="flashes">
@@ -54,7 +73,6 @@
 	</div>
 	<div id="websockets-alert" class="alert alert-warning" role="alert" style="display: none;">Unable to connect to Web Socket server. Some services may not work as intended.</div>
 
-	{control events}
 	{include content}
 </div>
 

@@ -11,10 +11,13 @@ services:
             class: Game\Entities\PM\MessagesListener
             tags: [kdyby.subscriber]
 
-    - Teddy\Map\MapService()
-    - Teddy\Map\Components\IMapControlFactory()
+    - Game\Map\MapService()
+    - Game\Map\AttackService()
+    - Game\Map\Components\IMapControlFactory()
     - Game\GameModule\Components\IWebcamControlFactory()
     - Game\Entities\Chat\ChatFacade()
+    events: Game\GameModule\Components\IEventsControlFactory()
+    users: Game\Entities\User\Users(%salt%)
 
 migrations:
     dirs:
@@ -49,16 +52,22 @@ webloader:
     css:
         game:
             files:
-                map: teddy/map/map.less
+                style: game/style.less
+                map: game/map/map.less
     js:
         game:
             files:
                 websockets: game/websockets/websockets.js
                 astar: teddy/map/astar.js
-                pathfinding: teddy/map/pathfinding.workers.js
+                pathfinding: game/map/pathfinding.workers.js
+                mapMonsters: game/map/monsters.js
+                mapPlayers: game/map/players.js
 
 console:
     url: http://www.teddy.l/
     commands:
         generateMap: Game\Map\Console\GenerateMapCommand
         embiggenMap: Game\Map\Console\EmbiggenMapCommand
+        generateMonsters: Game\Map\Console\GenerateMonstersCommand
+        regenerateHp: Game\Map\Console\RegenerateHpCommand
+        addMoves: Game\Map\Console\AddMovesCommand

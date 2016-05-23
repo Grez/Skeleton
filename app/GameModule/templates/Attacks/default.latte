@@ -1,0 +1,12 @@
+{block content}
+	<h1>Attacks</h1>
+	<div class="attack" n:foreach="$attacks as $attack">
+		<h3>
+			{$attack->getMonster()->getName()}
+			<small>{$attack->getAttackedAt()|date:'Y-m-d H:i'}</small>
+		</h3>
+
+		{$attack->getDescription()|escape|nl2br|noescape}
+		{sep}<hr>{/sep}
+	</div>
+{/block}
