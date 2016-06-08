@@ -11,10 +11,9 @@ doctrine:
 	password: root
 	dbname: teddy
 ```
-5.
-a) If you want WebSockets set `wss.domain.tld`, see config at https://github.com/grez/websockets/README.md
-
-b) If you don't want to use WebSockets delete `"teddy/websockets": "dev-master",` from `composer.json` and `websockets` from `app/config/config.neon`
+5. Set up/delete Websockets
+ 1. If you want WebSockets set `wss.domain.tld`, see config at https://github.com/grez/websockets
+ 2. If you don't want to use WebSockets delete `"teddy/websockets": "dev-master",` from `composer.json` and `websockets` from `app/config/config.neon`
 
 You may now login with username `admin` and password `admin`
 
